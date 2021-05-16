@@ -1,0 +1,111 @@
+/** {
+    background-color: cyan;
+}*/
+
+body {
+    background-color: #f1faee;
+}
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+
+}
+h1,h2 {
+    color: #1d3557;  /*first time h1,h2 are styled*/
+}
+
+
+span {
+    color: #219ebc;
+}
+
+.tag {
+    background-color: #e63946;
+    color :#ffd7ba;
+    font-size:16px ;
+}
+
+.post a {
+    color: #219ebc;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+h2 + button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+footer > a {
+    color: #1b4332;
+}
+
+input {
+    color: greenyellow;
+}
+input[type="password"] {
+    color: purple;
+}
+
+section[class="post"]{
+    background-color: orange;
+}
+
+/* Just making all the anchor tags containing GOOGLE in it*/
+a[href*="google"]{
+    color:magenta;
+}
+/* all buttons except the "sign up" button have made this change because of the "sign up" button has a competion with another css specifer
+*/
+
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #2ec4b6;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #4a3715;
+}
+
+h2::first-letter{
+    font-size: 50px;
+}
+
+P::first-line{
+    color: purple;
+}
+
+p::selection {       /*if we did "::selection" then it will apply to the full page*/
+    background-color: cyan;
+}
+
+h1,h2 {                      /*Second time h1,h2 is styled overwriting the first one*/
+    color: yellowgreen
+}
+/*------*/
+/*Conflicting CSS */
+.post button:hover{
+    background-color: #d62828;
+    color: #f1faee;
+}
+
+#signup{
+    background-color: #1d3557; /*The "signup"button got its CSS from the ID selector which is highly specific so it is not affected by any other CSS changes made*/
+    color: #f1faee;
+}
+
+
+button:hover{
+    background-color: olive; /*This just applies to the "login" button*/
+    font-size: 10px;  /*this applies to all the buttons*/
+}
+/*-------*/
+
