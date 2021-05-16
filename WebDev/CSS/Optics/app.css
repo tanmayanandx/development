@@ -1,0 +1,31 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta ;
+
+}
+
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.7); /* "a" in "rgba" ranges from 0 to 1 where 0 is complete transparent and 1 is complete opaque*/
+    /*Transparency only applies to the background color and the descendents*/
+}
+
+/* #rgba {
+    width: 50%;
+    height: 50%;
+    background-color: #05cf6a44; /* Instead of rgba we can also use the hex decimal format with just the tweak that the last 2 bits after the color will be set for the transparency ranging from "00" to "ff"*/
+    /* in this example "05cf6a" is the color and  "e7" is the transparency (00 means completely transparent and ff means not at all transparent)*/  
+/*}*/
+*/
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;/*The transparency also applies to the text unlike with the case of transparency("a")*/
+    /*This affects the whole div whereas the "rgba" only affected the one property*/
+
+}
