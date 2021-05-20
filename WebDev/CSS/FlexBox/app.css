@@ -1,0 +1,70 @@
+body { 
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /*height: 500px;*/
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 600px;
+}
+
+
+div:nth-of-type(1){
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+
+
+div:nth-of-type(5){
+    flex-grow: 2;
+    flex-shrink: 0 ;
+}
+
+
+
+main {
+    width: 80%; 
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    border: 1px solid white;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px; 
+}
+
+    /*flex-direction: row; other value : "Row Reverse" It's the Default value of the flex*/
+    /*flex-direction: row-reverse;*//* Changes the direction of the flexbox to right to left still keeping it horizontal*/
+    /*Other flex-direction: ; attributes can be column & column-reverse these make the rows vertical from top to bottom being the default condition in this case*/
+    /*The flecbox always keeps the elements within the size constraints by shrinking the size of each element accordingly*/
+    /* What it does is basically starting the flow of content of the flexbox to either extreme-left, or extreme-right, or centre*/
+    /*Types of attributes for justify-content: is space-between, flex-start flex-end, centre,sapce evenly*/
+
+    /*flex-wrap: wrap;*/  /*This affects the cross axis*/
+    /*Affects the cross axis*/
+    /*Turning Flexbox on*/
