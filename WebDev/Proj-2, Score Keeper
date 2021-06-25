@@ -1,6 +1,0 @@
-A basics project to keep a score between two players in the game of ping pong.
-One Player wins if he reaches to a certain point(that can be changed) before the other player. 
-The player who won, he's score will be shown in green and the player who lost, he's score will be shown in red.
-And one a Player wins, we'll have to reset the scores to continue it.
-
-Used BULMA and practised DOM Concepts like events, buttons, listners.
